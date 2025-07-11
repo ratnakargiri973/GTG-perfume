@@ -1,0 +1,262 @@
+.about-section {
+    /* padding: 40px 20px; */
+    color: white;
+}
+
+/* Stats Grid */
+.about-container {
+    background: linear-gradient(to right, #004d26, #0c6b3b);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto 60px;
+    padding: 80px;
+}
+
+.about-box {
+    flex: 1 1 200px;
+    min-width: 150px;
+    text-align: center;
+}
+
+.about-box h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Comparison Section */
+.comparison-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #003d1f;
+    border-radius: 16px;
+    margin: 0 auto 60px;
+    max-width: 1100px;
+}
+
+.comparison-section h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 16px 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.comparison-table img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+#gtg-col{
+    background-color: rgb(206, 240, 229);
+}
+ td span{
+    width: 7px;
+    height: 7px;
+    padding: 4px;
+    border: 1px solid rgb(102, 19, 19);
+    border-radius: 100%;
+}
+#gtg-col span{
+    background-color: green;
+    color: white;
+    border: none;
+}
+.risk-free-btn {
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #02532e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.risk-free-btn:hover {
+    background-color: #013c22;
+}
+
+/* Video Section */
+.video-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.video-bg {
+    width: 95%;
+    border-radius: 16px;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #02532e;
+    border: none;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.founder-text {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.founder-text h3 {
+    font-size: 22px;
+    color: #003d1f;
+    margin-bottom: 10px;
+}
+
+.founder-text p {
+    font-size: 14px;
+    max-width: 300px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-btn {
+    background-color: #02532e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background-color: #013c22;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-box h3 {
+        font-size: 24px;
+    }
+
+    .about-box p {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .comparison-section h2 {
+        font-size: 22px;
+    }
+
+    .comparison-table table {
+        font-size: 13px;
+    }
+
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .founder-text {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .about-box h3 {
+        font-size: 22px;
+    }
+
+    .about-box p {
+        font-size: 12px;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+
+    .risk-free-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .founder-text{
+        flex-direction: column;
+        gap: 3px;
+    }
+    .founder-text h3 {
+        font-size: 18px;
+    }
+
+    .founder-text p {
+        font-size: 13px;
+    }
+
+    .about-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}

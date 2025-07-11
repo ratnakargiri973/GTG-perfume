@@ -1,0 +1,520 @@
+#shop {
+  background-color: white;
+  width: 100%;
+}
+
+.shopOne {
+  width: 100%;
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.shopOne div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shopOne div #title {
+  color: rgb(120, 180, 120);
+  letter-spacing: 2px;
+}
+
+.shopOne div h2 {
+  color: rgb(3, 83, 3);
+}
+
+.shopOne div #desc {
+  color: rgb(78, 163, 78);
+}
+
+.shopOne div #desc span {
+  color: green;
+  font-weight: bold;
+}
+
+.shopBtn {
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(2, 80, 2);
+  color: white;
+  cursor: pointer;
+}
+
+.shopBtn:hover {
+  background-color: green;
+}
+
+.shopOne img {
+  width: 630px;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ✅ Tablet View (≤ 1024px) */
+@media (max-width: 1024px) {
+  .shopOne {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+
+  .shopOne img {
+    width: 400px;
+  }
+
+  .shopOne div h2 {
+    font-size: 24px;
+  }
+}
+
+/* ✅ Mobile View (≤ 768px) */
+@media (max-width: 768px) {
+  .shopOne {
+    flex-direction: column;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .shopOne div {
+    align-items: center;
+  }
+
+  .shopOne img {
+    width: 100%;
+    height: auto;
+  }
+
+  .shopOne div h2 {
+    font-size: 22px;
+  }
+
+  .shopOne div #title {
+    font-size: 14px;
+  }
+
+  .shopOne div #desc {
+    font-size: 14px;
+  }
+
+  .shopBtn {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+}
+
+.shopTwo{
+    width: 100%;
+    height: auto;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/* Perfume */
+
+.product-gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-image-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-image-wrapper img {
+  width: 400px;
+  height: 420px;
+  border-radius: 20px;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 60px;
+  background: rgb(218, 215, 215);
+  border: 1px solid green;
+  color: green;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(12, 216, 90, 0.15);
+  transition: all ease-in-out 0.2;
+}
+.arrow:hover{
+    background-color: rgb(175, 170, 170);;
+}
+.arrow:active{
+    transform: scale(0.97);
+}
+
+.arrow.left {
+  left: 20px;
+}
+
+.arrow.right {
+  right: 20px;
+}
+
+.dots {
+  margin-top: 10px;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #0db358;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.dot.active {
+  background-color: #18d865;
+}
+.thumbnails {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnails img:hover {
+  border-color: green;
+}
+
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.rating {
+  color: #059669;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.tag {
+  background: #047857;
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.plan-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.plan-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan-option input[type="radio"] {
+  margin: 0;
+}
+
+.plan-option .price {
+  font-weight: bold;
+  color: #047857;
+}
+
+.plan-option .price s {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+
+
+.try-mode {
+  display: none;
+  margin: 12px 0;
+  gap: 10px;
+}
+
+.try-mode label {
+  margin-right: 10px;
+}
+
+.panel {
+  display: none;
+  margin-bottom: 20px;
+}
+.panel h3{
+  margin-top: 10px;
+}
+
+.fragrance-options {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.fragrance-options label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(238, 236, 236);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.fragrance-options input[type="radio"] {
+  margin-right: 4px;
+}
+
+.fragrance-options img {
+  margin-top: 8px;
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  /* border: 1px solid #e5e7eb; */
+}
+
+
+.inclusions {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.features {
+  padding-left: 16px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.green {
+  color: #047857;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  display: block;
+  background: #047857;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.inclusions {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.inclusions .monthly,
+.inclusions .samplers {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.inclusions .monthly p,
+.inclusions .samplers p {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.inclusions .monthly img {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.inclusions .samplers div {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.inclusions .samplers img {
+  width: 50px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.try-feature{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.try-feature i{
+  color: rgb(138, 134, 134);
+}
+
+@media (max-width: 1024px) {
+  .shopTwo {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 40px;
+  }
+
+  .product-gallery {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-image-wrapper img {
+    width: 300px;
+    height: 320px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .fragrance-options {
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .inclusions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inclusions .monthly,
+  .inclusions .samplers {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .shopTwo {
+    padding: 20px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .arrow {
+    bottom: 60px;
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .subscription-selector label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .try-mode {
+    flex-direction: column;
+  }
+
+  .fragrance-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .fragrance-options label {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .radio-label {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .fragrance-options img {
+    width: 50px;
+    height: 75px;
+  }
+
+  .inclusions {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .inclusions .samplers div {
+    gap: 6px;
+  }
+
+  .add-to-cart {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+

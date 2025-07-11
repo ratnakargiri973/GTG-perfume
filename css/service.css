@@ -1,0 +1,53 @@
+#service {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping */
+  padding: 20px 0;
+  background-color: rgb(217, 243, 234);
+  gap: 20px; /* spacing between rows when wrapped */
+  text-align: center;
+}
+
+#service div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: rgb(74, 73, 73);
+  flex: 1 1 200px; /* allow resizing */
+  min-width: 150px;
+}
+
+#service div i {
+  font-size: 30px;
+}
+
+
+@media (max-width: 1024px) {
+  #service {
+    gap: 16px;
+  }
+
+  #service div i {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  #service {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+
+  #service div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #service div i {
+    font-size: 24px;
+  }
+}

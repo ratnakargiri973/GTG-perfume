@@ -1,0 +1,148 @@
+.subscription-section {
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 60px;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.subscription-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #9c8c74;
+  color: #fefefe;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.subscription-text {
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.subscription-text h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.subscription-text strong {
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tags span {
+  padding: 8px 16px;
+  background-color: white;
+  color: #166534;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.subscribe-btn {
+  padding: 12px 24px;
+  background-color: #02532e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #013c22;
+}
+
+.subscription-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.subscription-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 1024px) {
+  .subscription-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subscription-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .subscription-text h2 {
+    font-size: 26px;
+  }
+
+  .subscription-image {
+    margin-top: 20px;
+  }
+
+  .subscription-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-text h2 {
+    font-size: 20px;
+  }
+
+  .tags span {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .subscribe-btn {
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+
+  .subscription-container {
+    padding: 30px 10px;
+  }
+
+  .subscription-image img {
+    max-width: 100%;
+  }
+}

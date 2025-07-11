@@ -1,0 +1,170 @@
+ .collection-section {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   padding: 70px;
+   background-color: #f8f8f8;
+   flex-wrap: wrap;
+   gap: 40px;
+ }
+
+ .collection-content {
+   flex: 1 1 400px;
+   max-width: 600px;
+ }
+
+ .collection-content h2 {
+   font-size: 28px;
+   margin-bottom: 20px;
+   color: #1f4035;
+ }
+
+ .accordion {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .accordion-item {
+   background-color: #ffffff;
+   border-radius: 8px;
+   overflow: hidden;
+   border: 1px solid #e0e0e0;
+   transition: all 0.3s ease;
+ }
+
+ .accordion-header {
+   padding: 16px;
+   font-weight: 600;
+   background: #f3f3f3;
+   width: 100%;
+   text-align: left;
+   cursor: pointer;
+   border: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 16px;
+ }
+
+ .accordion-body {
+   padding: 16px;
+   display: none;
+   font-size: 14px;
+   color: #333;
+ }
+
+ .accordion-item.active .accordion-body {
+   display: block;
+ }
+
+ .icon {
+   font-size: 20px;
+   color: #1f4035;
+ }
+
+ .collection-gallery {
+   flex: 1 1 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .collection-image-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   position: relative;
+ }
+
+ .collection-image-container {
+   position: relative;
+ }
+
+ .collection-image-container #mainCollectionImage {
+   width: 300px;
+   height: 350px;
+   border-radius: 10px;
+ }
+
+ .arrow {
+   background-color: #ffffffcc;
+   border: none;
+   font-size: 24px;
+   cursor: pointer;
+   padding: 10px 15px;
+   border-radius: 50%;
+   transition: background-color 0.3s;
+   z-index: 2;
+ }
+
+ .arrow:hover {
+   background-color: #eee;
+ }
+
+ .collection-dots {
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 8px;
+ }
+
+ .collection-dot {
+   height: 5px;
+   width: 5px;
+   margin: 0 5px;
+   display: inline-block;
+   background-color: #0db358;
+   border-radius: 50%;
+   cursor: pointer;
+ }
+
+
+ .collection-dot.active {
+   background-color: #18d865;
+ }
+
+ @media (max-width: 1024px) {
+   .collection-section {
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 20px;
+   }
+
+   .collection-content,
+   .collection-gallery {
+     max-width: 100%;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .collection-content h2 {
+     font-size: 22px;
+   }
+
+   .accordion-header {
+     font-size: 14px;
+     padding: 12px;
+   }
+
+   .accordion-body {
+     font-size: 13px;
+     padding: 12px;
+   }
+
+   .icon {
+     font-size: 16px;
+   }
+
+   .image-container img {
+     width: 90vw;
+   }
+
+   .arrow {
+     font-size: 20px;
+     padding: 8px 12px;
+   }
+ }

@@ -1,0 +1,286 @@
+
+#blog {
+  padding: 60px 20px;
+}
+.testimonial-section {
+  background-color: #f0fff5;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+}
+
+.testimonial-title {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.testimonial-title h2 {
+  font-size: 28px;
+  color: #003d1f;
+  margin-bottom: 10px;
+}
+
+.testimonial-title p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.carousel-header-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nav-btn {
+  font-size: 20px;
+  background: #003d1f;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #02532e;
+}
+
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: max-content;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  margin: 0 10px;
+  padding: 20px;
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.testimonial-profile i {
+   font-size: 32px;
+  color: #047857;
+}
+
+.stars {
+  color: #0f5132;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Dots */
+.dots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dots .active {
+  background-color: #02532e;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 33.333%;
+  }
+
+  .testimonial-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .testimonial-title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .testimonial-title {
+    text-align: left;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100%;
+  }
+
+  .carousel-header-buttons {
+    align-self: flex-end;
+  }
+}
+
+.faq-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.faq-left {
+  flex: 1;
+  max-width: 350px;
+}
+
+.faq-left h2 {
+  font-size: 28px;
+  color: #014020;
+  margin-bottom: 10px;
+}
+
+.faq-left p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.faq-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  background-color: #02532e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-btn:hover {
+  background-color: #013c22;
+}
+
+.faq-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #014020;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #027a44;
+}
+
+.faq-toggle {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+}
+
+.faq-answer.open {
+  display: block;
+}
+
+.faq-right button {
+  margin-top: 20px;
+  align-self: flex-start;
+  background-color: transparent;
+  color: #02532e;
+  border: 2px solid #02532e;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-right button:hover {
+  background-color: #02532e;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-section {
+    flex-direction: column;
+  }
+
+  .faq-left,
+  .faq-right {
+    max-width: 100%;
+  }
+
+  .faq-right button {
+    align-self: center;
+  }
+   .testimonial-card {
+    flex: 0 0 33.333%;
+  }
+}
+
